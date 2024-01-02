@@ -1,0 +1,381 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+center,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e8e8e8;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+img {
+    width: 100%;
+}
+li {
+    list-style-position: inside;
+    text-indent: -1.2em;
+}
+.homeLinks li {
+    list-style: none;
+    list-style-position: outside;
+    text-indent: 0;
+}
+a {
+    font-weight: bold;
+    font-size: 1.3em;
+    text-decoration: none;
+    padding: .3em .5em;
+    margin: .5em 0;
+    color: #656566;
+    background: linear-gradient(90deg, #eee, #fff);
+    border-radius: .3em;
+    display: block;
+}
+.lab a:hover {
+    color: #145374;
+    background: #fff;
+    box-shadow: 0 0 .5em  #d4d4d6;
+}
+.exercise a:hover {
+    color: #36622b;
+}
+.project a:hover {
+    color: #480032;
+}
+header {
+    text-align: center;
+    color: #fff;
+}
+.homeLink {
+    display: block;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    margin-top: 0;
+    margin-left: 1em;
+    background: rgba(255,255,255,0.8);
+    border-radius: 0;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+}
+.homeLink:hover {
+    box-shadow: 0 0 .5em  #000;
+}
+.lab a.innerLink {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    color: #00334e;
+    background: none;
+    border-radius: none;
+    display: inline;
+    text-decoration: underline;
+}
+.lab a.innerLink:hover {
+    color: #145374;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.project a.innerLink {
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    color: #480032;
+    background: none;
+    border-radius: none;
+    display: inline;
+    text-decoration: underline;
+}
+.project a.innerLink:hover {
+    color: #77122f;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.important {
+    color: #77122f;
+    font-weight: bold;
+}
+.home header {
+    background: linear-gradient(#24282c, #4e5457);
+}
+.lab header, .labHome {
+    background: linear-gradient(#00334e, #145374 );
+}
+.exercise header, .exerciseHome {
+    background: linear-gradient(#36622b, #5c802e);
+}
+.project header, .projectHome {
+    background: linear-gradient(#480032, #77122f);
+}
+.demo header, .demoHome {
+    background: linear-gradient(#2c273f, #67657c);
+}
+h1 {
+    font-size: 2em;
+    padding: 1em;
+}
+section {
+    width: 70%;
+    background: #fff;
+    box-shadow: 0 0 .5em  #d4d4d6;
+    border-radius: .8em;
+    margin: 2em auto;
+    padding: 2em;
+}
+section h1 {
+    padding: 0;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.lab h2 {
+    color: #145374;
+}
+.exercise h2 {
+    color: #36622b;
+}
+.project h2 {
+    color: #480032;
+}
+.demo h2 {
+    color: #2c273f;
+}
+h3 {
+    font-size: 1.25em;
+    margin-top: 1em;
+}
+.lab h3 {
+    color:  #5588a3;
+}
+.exercise h3 {
+    color: #a1c45a;
+}
+.project h3 {
+    color: #77122f;
+}
+.demo h3 {
+    color: #67657c;
+}
+ul, ol {
+    list-style-position: inside;
+    line-height: 2em;
+    margin-left: 1em;
+}
+code {
+    background: #F5F2F0;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    border-radius: .3em;
+    padding: .1em;
+    color: #000;
+    font-weight: bold;
+}
+p {
+    margin-bottom: 1em;
+}
+p.paraNoBottomMarg {
+    margin-bottom: 0;
+}
+
+/******************
+   OUTPUT STYLES
+*******************/
+.studentOutput, .sampleOutput {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+}
+.inputVars, .outputVars, .checklist, .testCase {
+    font-family: 'Courier New', Courier, monospace;
+}
+.testHeader {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/******************
+    PART HEADINGS
+*******************/
+.part {
+    position: relative;
+    top: -2em;
+    left: -2em;
+    width: 100%;
+    height: 50px;
+    border-top-right-radius: .8em;
+    border-top-left-radius: .8em;
+    padding: .8em 2em;
+    color: #fff
+}
+.lab .part {
+    background: linear-gradient(#145374, #00334e);
+}
+.exercise .part {
+    background: linear-gradient(#5c802e, #36622b);
+}
+
+/************
+    TABLES
+*************/
+table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table, th, td {
+    border: none;
+}
+.lab th {
+    font-weight: bold;
+    background: #bfd5e0;
+}
+.exercise th {
+    font-weight: bold;
+    background: #cfd8c2;
+}
+.project th {
+    font-weight: bold;
+    background: #cfb1ba;
+}
+table tr {
+    border-bottom: none;
+}
+td, th {
+    padding: 8px 10px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+}
+table>tbody>tr:nth-child(odd) {
+    background-color: rgba(244, 217, 217, 0.5);
+}
+
+/*******************************
+   FORM STYLES
+*******************************/
+input {
+    display: block;
+    margin-bottom: 1.3em;
+    font-size: .9em;
+    padding: .2em;
+}
+label {
+    color: #145374;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+}
+.demo label {
+    color: #67657c;
+}
+.lab label {
+    color: #145374;
+}
+.exercise label {
+    color: #5c802e;
+}
+.project label {
+    color: #77122f;
+}
+input[type="submit"], input[type="reset"] { 
+    display: inline;
+    border-radius: .5em;
+    padding: .5em .8em;
+    font-size: .7em;
+    color: #fff;
+}
+.demo input[type="submit"], .demo input[type="reset"] {
+    border: 2px solid #67657c;
+    background: linear-gradient(#2c273f, #67657c);
+}
+.lab input[type="submit"], .lab input[type="reset"] {
+    border: 2px solid #145374;
+    background: linear-gradient(#145374, #00334e);
+}
+.exercise input[type="submit"], .exercise input[type="reset"] {
+    border: 2px solid #5c802e;
+    background: linear-gradient(#5c802e, #36622b);
+}
+.project input[type="submit"], .project input[type="reset"] {
+    border: 2px solid #77122f;
+    background: linear-gradient(#480032, #77122f);
+}
+.demo input[type="submit"]:hover, .demo input[type="reset"]:hover {
+    background: #2c273f;
+    color: #fff;
+}
+.lab input[type="submit"]:hover, .lab input[type="reset"]:hover {
+    background: #00334e;
+    color: #fff;
+}
+.exercise input[type="submit"]:hover, .exercise input[type="reset"]:hover {
+    background: #36622b;
+    color: #fff;
+}
+.project input[type="submit"]:hover, .project input[type="reset"]:hover {
+    background: #480032;
+    color: #fff;
+}
+/*******************************
+   Demo Buttons
+*******************************/
+.demoButton { 
+    display: inline;
+    border-radius: .5em;
+    padding: .5em .8em;
+    font-size: 1em;
+    color: #fff;
+    border: 1px solid #67657c;
+    background: linear-gradient(#2c273f, #67657c);
+}
+.demoButton:hover {
+    background: #67657c;
+}
+/*******************************
+   PRINTING STYLES
+*******************************/
+@media print {
+    .noPrint {
+      display: none !important;
+    }
+    body {
+        font-size: 12px;
+    }
+    section {
+        box-shadow: none;
+        border: 1px solid gray;
+        padding: 10px;
+    }
+  }
