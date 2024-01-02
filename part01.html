@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link href="../styles/css.css" rel="stylesheet"/>
+  <link href="../styles/prism.css" rel="stylesheet"/>
+  <script src="../js/prism.js"></script>
+  <script src="../js/project-part01.js"></script>
+  <script src="../js/unitData.js"></script>
+  <title>Project - Part 1</title>
+
+
+</head>
+
+<body class="project">
+  <header>
+    <h1>DEMO EXAMPLE 1</h1>
+  </header>
+    
+
+  <main>
+
+    <section class="planning">
+      <h2>Planning List</h2>
+      <h3>Input Variables</h3>
+      <div class="inputVars">
+        <!-- Enter Input Variables within the <ul> as <li> elements --> 
+        <ul>
+          <li>let uniqueZipCodeArray = [];</li>
+          <li>let index;</li>
+          <li>let zipCode;</li>
+          <li>let output;</li> 
+        </ul>
+      </div>
+      <h3>Output Variables</h3>
+      <div class="outputVars">
+        <!-- Enter Output Variables within the <ul> as <li> elements --> 
+        <ul>
+          <li>let output;</li> 
+        </ul>
+      </div>
+      <h3>Process Checklist</h3>
+      <div class="checklist">
+        <!-- Enter the Checklist within the <ul> as <li> elements --> 
+        <ul>
+          <li>Create global variables and a global array</li>
+          <li>For efficiency, create a function that will compute the logic to determine a unique zip code</li>
+          <li>Create logic within the function</li>
+          <li>Create a function that stores an HTML ordered list</li>
+          <li>Create the HTML ordered list logic within the function</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="testPlan">
+      <h2>Test Plan</h2>
+      <p>Use a sub-set of the zip code record set to create a test plan.</p>
+      <!-- ---------------------
+            TEST CASE 1 
+      ------------------------->
+      <h3>Test Case 1</h3>
+      <div class="testCase">
+        <p><span class="testHeader">Expected Input:</span>
+            <!-- Enter expected input here-->
+            <ol>
+            <li>91343</li>
+            <li>91342</li>
+            <li>75211</li>
+            <li>10024</li>
+            <li>75214</li>
+            <li>10023</li>
+            <li>55410</li>
+            <li>91343</li>
+            <li>10023</li>
+            <li>55412</li>
+          </ol>
+
+        </p>
+        <p><span class="testHeader">Expected Output:</span>
+              <!-- Enter expected output here-->
+              
+              <ol>
+              <li>91343</li>
+              <li>91342</li>
+              <li>75211</li>
+              <li>10024</li>
+              <li>75214</li>
+              <li>10023</li>
+              <li>55410</li>
+              <li>55412</li>
+              <li>10021</li>
+              <li>55411</li>
+            </ol>
+
+        </p>
+      </div>    
+    </section>
+  
+
+
+    <section>
+      <h2>Your Output</h2>
+      <div class="studentOutput" id="part01Output">
+        <ol id="zipCodeOutput">
+
+        </ol>
+        
+      </div>
+      <script language="JavaScript" type="text/javascript">part01();</script>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

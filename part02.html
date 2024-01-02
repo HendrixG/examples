@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link href="../styles/css.css" rel="stylesheet"/>
+  <link href="../styles/prism.css" rel="stylesheet"/>
+  <script src="../js/prism.js"></script>
+  <script src="../js/project-part02.js"></script>
+  <script src="../js/unitData.js"></script>
+  <title>Project - Part 2</title>
+
+
+</head>
+
+<body class="project">
+  <header>
+    <h1>DEMO EXAMPLE 2</h1>
+  </header>
+    
+
+  <main>
+    <section class="planning">
+      <h2>Planning List</h2>
+      <h3>Input Variables</h3>
+      <div class="inputVars">
+        <!-- Enter Input Variables within the <ul> as <li> elements --> 
+        <ul>
+          <li>let table;</li>
+          <li>let form;</li>
+          <li>let totalNames;</li>
+          <li>let enteredName;</li>
+        </ul>
+      </div>
+      <h3>Output Variables</h3>
+      <div class="outputVars">
+        <!-- Enter Output Variables within the <ul> as <li> elements --> 
+        <ul>
+          <li>let table;</li>
+          <li>let form;</li>
+          <li>let totalNames;</li>
+          <li>let enteredName;</li>
+        </ul>
+      </div>
+      <h3>Process Checklist</h3>
+      <div class="checklist">
+        <!-- Enter the Checklist within the <ul> as <li> elements --> 
+        <ul>
+          <li>Create necessary global variables and a global array</li>
+          <li>Create an HTML form and table</li>
+          <li>Create logic for name entry, name count, and name placement into the array</li>
+          <li>Create HTML logic to display output</li>
+          <li>Create additional necessary functions for ease of use</li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="testPlan">
+      <h2>Test Plan</h2>
+      <!-- ---------------------
+            TEST CASE 1 
+      ------------------------->
+      <h3>Test Case 1</h3>
+      <div class="testCase">
+        <p><span class="testHeader">Expected Input:</span>
+            <!-- Enter expected input here-->
+          </br> 
+            NAME
+          </br> 
+            NAME
+          </br> 
+          NAME
+        </p>
+        <p><span class="testHeader">Expected Output:</span>
+              <!-- Enter expected output here-->
+            </br>     
+              Total Names: 3
+            </br>
+              Entered Names: NAME, NAME, NAME
+        </p>
+      </div>
+      <!-----------------------
+            TEST CASE 2
+      ------------------------->
+      <h3>Test Case 2</h3>
+      <div class="testCase">
+        <p><span class="testHeader">Expected Input:</span>
+            <!-- Enter expected input here-->
+            12345
+        </p>
+        <p><span class="testHeader">Expected Output:</span>
+              <!-- Enter expected output here-->
+              "Sorry, please enter a name!"
+              
+        </p>
+      </div>
+       <!-----------------------
+            TEST CASE 3
+      ------------------------->
+      <h3>Test Case 3</h3>
+      <div class="testCase">
+        <p><span class="testHeader">Expected Input:</span>
+            <!-- Enter expected input here-->
+            *Click Submit with an empty form*
+        </p>
+        <p><span class="testHeader">Expected Output:</span>
+              <!-- Enter expected output here-->
+              "Sorry, please enter a name!"
+        </p>
+      </div>
+      
+    </section>
+
+
+    <section>
+      <h2>Your Output</h2>
+      <div class="studentOutput" id="part02Output">
+        <!-- Your Form Here -->
+        
+        <form id="formId" action="#" onsubmit="part02(); return false;">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+  
+          <br />
+  
+          <input type="submit" name="runName" value="Submit" />
+      </form>
+  
+      <br />
+      <div id="enteredNameOutputId"></div>
+    
+        
+      <h3 id="totalNamesId">Total Names:</h3>
+      <br />
+
+
+
+
+        <!-- Your Output Table Here -->
+        
+        <table id="myTable">
+          <tr>
+            <th>
+              Entered Names
+            </th>
+          </tr>
+        </table>
+        
+        
+        
+        
+        
+        
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>
